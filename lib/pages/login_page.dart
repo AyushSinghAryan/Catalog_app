@@ -121,7 +121,7 @@ class _LoginPageState extends State<LoginPage> {
                   color: Colors.deepPurple,
                   borderRadius: BorderRadius.circular(10),
                   child: InkWell(
-                    splashColor: Colors.deepOrangeAccent,
+                    splashColor: Colors.pinkAccent,
                     onTap: () => moveToHome(context),
                     child: AnimatedContainer(
                       duration: Duration(seconds: 1),

@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
           fontFamily: GoogleFonts.lato().fontFamily,
           primaryTextTheme: GoogleFonts.latoTextTheme()),
       darkTheme: ThemeData(brightness: Brightness.dark),
-      initialRoute: '/login',
+      initialRoute: MyRoutes.homeRoute,
       routes: {
         MyRoutes.loginRoute: (context) => const LoginPage(),
         // "/login": (context) => LoginPage(),
