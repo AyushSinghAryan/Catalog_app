@@ -31,7 +31,7 @@ class MyDrawer extends StatelessWidget {
                     "ayushsingharyan0@gmail.com",
                     style: GoogleFonts.lato(
                       textStyle: TextStyle(
-                          color: Colors.white, letterSpacing: .5, fontSize: 15),
+                          color: Colors.white, letterSpacing: .5, fontSize: 1),
                     ),
                   ),
                   currentAccountPicture:
