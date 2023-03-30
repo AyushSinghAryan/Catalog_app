@@ -1,0 +1,68 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "iPhone 14 Pro",
+            "desc": "Apple iPhone 14th generation",
+            "price": 999,
+            "color": "#33505a",
+            "image": "https://ismart.co.in/wp-content/uploads/2022/09/iphone-14-pro-finish-select-202209-6-1inch-deeppurple.png"
+        },
+        {
+            "id": 2,
+            "name": "Pixel 7",
+            "desc": "Google Pixel phone 7th generation",
+            "price": 699,
+            "color": "#00ac51",
+            "image": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61znAJyslHL._SX679_.jpg"
+        },
+        {
+            "id": 3,
+            "name": "M2 Macbook Air ",
+            "desc": "Apple Macbook air with apple silicon",
+            "price": 1099,
+            "color": "#e0bfae",
+            "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-midnight-select-20220606?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1653084303665"
+        },
+        {
+            "id": 4,
+            "name": "Playstation 5",
+            "desc": "Sony Playstation 5th generation",
+            "price": 500,
+            "color": "#544ee4",
+            "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT95LLLnxmxE-sfzcrZ-yzCrSxG_8BmAGfuWYc0sKrFWbQG6WCdaK4V2Xm-1u2Ndub7-UvnaCxRceqahHW5gxNyHfEmfSdw"
+        },
+        {
+            "id": 5,
+            "name": "Airpods Pro",
+            "desc": "Apple Aipods Pro 1st generation",
+            "price": 200,
+            "color": "#e3e4e9",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQROEs084z65psoo06zYl5R0tUzywOVKVQZzmzqCj3PDP1vVJTWv3gGwGMFENSy4qV4n7sEQjE&usqp=CAc"
+        },
+        {
+            "id": 6,
+            "name": "iPad Pro",
+            "desc": "Apple iPad Pro 2022 edition",
+            "price": 799,
+            "color": "#f73984",
+            "image": "https://i-system.gr/storage/i3commerce/images/1/i/1ipad_pro_wi_fi_12_9_in_6th_generation_space_gray_pdp_image_position_1b_wwen_2.png"
+        },
+        {
+            "id": 7,
+            "name": "Galaxy S23 Ultra",
+            "desc": "Samsung Galaxy S23 Ultra 2023 edition",
+            "price": 1299,
+            "color": "#1c1c1c",
+            "image": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/41WpkxwZ+WL._SY300_SX300_.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Xiaomi 13 Pro",
+            "desc": "Xiaomi 13 Pro 2023 edition",
+            "price": 899,
+            "color": "#7c95eb",
+            "image": "https://www.reliancedigital.in/medias/Xiaomi-13-Pro-Mobile-Phone-493665810-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w3MjA0N3xpbWFnZS9qcGVnfGltYWdlcy9oODMvaGQ2Lzk5NzA3MzA1NjU2NjIuanBnfGYzNWFiMTZlZTRlOTU5N2UzMDJjMDcwZTFkOTBkMWJmNzQ4MzVkOWQ2ZmYzYjFjODczZTAxMDhhY2ZiMjliZjI"
+        }
+    ]
+}
