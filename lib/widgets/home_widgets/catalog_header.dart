@@ -9,7 +9,12 @@ class CatalogHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-      "Shopping Assistant".text.xl3.bold.color(MyTheme.darkBluishColor).make(),
+      "Shopping Assistant"
+          .text
+          .xl3
+          .bold
+          .color(context.theme.accentColor)
+          .make(),
       "Trending products".text.xl.make()
       // BOth are same OR
       // Text('Shopping Assistant')

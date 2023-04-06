@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/cart_page.dart';
 import 'package:flutter_application_1/pages/home_page.dart';
 import 'package:flutter_application_1/pages/login_page.dart';
 import 'package:flutter_application_1/utils/routes.dart';
@@ -10,7 +11,7 @@ import 'package:flutter/services.dart';
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
-    statusBarIconBrightness: Brightness.light,
+    // statusBarIconBrightness: Brightness.dark,
   ));
   runApp(const MyApp());
 }
@@ -29,14 +30,15 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       // home: HomePage(),
       debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.system,
       theme: MyTheme().lightTheme(context),
       darkTheme: MyTheme().DarkTheme(context),
-      initialRoute: MyRoutes.homeRoute,
+      initialRoute: MyRoutes.loginRoute,
       routes: {
         MyRoutes.loginRoute: (context) => const LoginPage(),
         // "/login": (context) => LoginPage(),
         MyRoutes.homeRoute: (context) => const HomePage(),
+        MyRoutes.cartRoute: (context) => const CartPage(),
       },
     );
     // funv({int rupee = 100}){

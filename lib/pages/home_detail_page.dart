@@ -16,9 +16,9 @@ class HomeDetailPage extends StatelessWidget {
         bottomOpacity: 0,
         elevation: 0,
       ),
-      backgroundColor: MyTheme.creamColor,
+      backgroundColor: context.canvasColor,
       bottomNavigationBar: Container(
-        color: Colors.white,
+        color: context.cardColor,
         child: ButtonBar(
           alignment: MainAxisAlignment.spaceBetween,
           buttonPadding: EdgeInsets.zero,
@@ -28,11 +28,11 @@ class HomeDetailPage extends StatelessWidget {
             ElevatedButton(
                     onPressed: (() {}),
                     style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(MyTheme.darkBluishColor),
+                        backgroundColor: MaterialStateProperty.all(
+                            context.theme.buttonColor),
                         shape: MaterialStateProperty.all(StadiumBorder())),
-                    child: "Buy".text.make())
-                .wh(100, 50)
+                    child: "Add to cart".text.make())
+                .wh(120, 50)
           ],
         ).p32(),
       ),
@@ -53,17 +53,23 @@ class HomeDetailPage extends StatelessWidget {
                     height: 30,
                     edge: VxEdge.TOP,
                     child: Container(
-                      color: Colors.white,
+                      color: context.cardColor,
                       width: context.screenWidth,
                       child: Column(
                         children: [
                           catalog.name!.text.xl4
-                              .color(MyTheme.darkBluishColor)
+                              .color(context.accentColor)
                               .bold
                               .make(),
                           catalog.desc!.text.xl
                               .textStyle(context.captionStyle)
                               .make(),
+                          10.heightBox,
+                          "Warum friedlich schon die freunde und du mich ruft, weiter bist so verschwiegen du, die in hast liebe ich es wärest geliebet einz'ges, weißt der winde die stillestehn einz'ges mit. Ankleiden weh und in zu stürmten dahinten sanken sanft. Geliebet weh jedoch mund weiter, brust da der immer ist. Liebe."
+                              .text
+                              .textStyle(context.captionStyle)
+                              .make()
+                              .p16()
                         ],
                       ).py64(),
                     )))
