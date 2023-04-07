@@ -16,7 +16,8 @@ class CatalogList extends StatelessWidget {
         shrinkWrap: true, //imp
         itemCount: CatalogModel.items!.length,
         itemBuilder: ((context, index) {
-          final catalog = CatalogModel.items![index];
+          // final catalog = CatalogModel.items![index];
+          final catalog = CatalogModel.getByPosition(index);
 
           return InkWell(
               onTap: () => Navigator.push(
@@ -24,6 +25,9 @@ class CatalogList extends StatelessWidget {
                   MaterialPageRoute(
                       builder: (context) => HomeDetailPage(
                             catalog: catalog,
+                            // suppose i want to open catalog with id 2
+                            // which ever catalog i click we get id 2 item
+                            // catalog: CatalogModel.getById(2),
                           ))),
               child: CatalogItem(catalog: catalog));
         }));

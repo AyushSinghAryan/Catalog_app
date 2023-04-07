@@ -34,7 +34,7 @@ class MyTheme {
           elevation: 0,
           iconTheme: IconThemeData(color: Colors.white),
           titleTextStyle: TextStyle(
-              color: Colors.black,
+              color: Colors.white,
               // fontWeight: FontWeight.bold,
               fontSize: 18)),
       primaryTextTheme: GoogleFonts.latoTextTheme());

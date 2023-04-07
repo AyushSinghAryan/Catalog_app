@@ -16,6 +16,17 @@ class CatalogModel {
   //       image:
   //           "https://ismart.co.in/wp-content/uploads/2022/09/iphone-14-pro-finish-select-202209-6-1inch-deeppurple.png")
   // ];
+
+  // getting item on basis of id and position
+  // Get item by id
+  //basically if we pass id then want that item that matched with id
+  // if not tho  null bol do
+  static Item getById(int id) =>
+      items!.firstWhere((element) => element.id == id, orElse: null);
+
+  // get item by position
+  // yaha id ki jagah position dey gey
+  static Item getByPosition(int pos) => items![pos];
 }
 
 class Item {
