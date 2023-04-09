@@ -2,6 +2,13 @@
 import 'dart:convert';
 
 class CatalogModel {
+  // making singlton class
+  //to create object only one time
+  static final catModel = CatalogModel._internal();
+  // creating costrucor of this
+  CatalogModel._internal();
+  // factory construcor
+  factory CatalogModel() => catModel;
   // catalog.item is also a list of items
   static List<Item>? items; // real life mey data null rahe ga starting mey
   // =
@@ -21,12 +28,12 @@ class CatalogModel {
   // Get item by id
   //basically if we pass id then want that item that matched with id
   // if not tho  null bol do
-  static Item getById(int id) =>
+  Item getById(int id) =>
       items!.firstWhere((element) => element.id == id, orElse: null);
 
   // get item by position
   // yaha id ki jagah position dey gey
-  static Item getByPosition(int pos) => items![pos];
+  Item getByPosition(int pos) => items![pos];
 }
 
 class Item {
